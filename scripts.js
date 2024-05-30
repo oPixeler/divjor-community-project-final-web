@@ -53,8 +53,7 @@ async function fetchProfiles() {
 // Function to display profiles on the page
 function displayProfiles(profiles) {
     const profileWrapper = document.getElementById('profile-scroller-wrapper');
-    const imagePaths = ['images/pfp1.jpg', 'images/pfp2.jpg', 'images/pfp3.jpg', 'images/pfp4.jpg', 'images/pfp5.jpg', 'images/pfp6.jpg'];
-
+    const imagePaths = ['profile1.jpg', 'profile2.jpg', 'profile3.jpg', 'profile4.jpg', 'profile5.jpg', 'profile6.jpg'];
     profiles.forEach(profile => {
         const [name, message] = profile;
         const imageUrl = imagePaths[Math.floor(Math.random() * imagePaths.length)]; // Randomly select an image
